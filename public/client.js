@@ -1,15 +1,40 @@
 console.log("the files are linked");
 console.log('client.js is working');
 
-/*$(document).ready(function(){
-    console.log('jquery is working');
-    $('#enterNumbersbutton').on('click', function(){
-        console.log('enterNumbersButton was clicked'); //I can't get this to confirm
-        var firstNumberBox = $('#firstNumberBox').val();
-        var secondNumberBox = $('#secondNumberBox').val();
-        var inputObject = {
-            numberOne: firstNumberBox,
-            numberTwo: secondNumberBox
+//get user information to send to the server
+$(document).ready(function(){
+    $("#enter").on("click", function(){
+        var firstNumInput = $("#firstNumber").val();
+        var secondNumInput = $("#secondNumber").val();
+        //need to get equationType passed into object, but not sure how to pass the type when there are four options
+        var equationType = 
+
+        var equationObject = {
+            numberOne: firstNumInput,
+            numberTwo: secondNumInput,
+            type: 
         };
+
+        //send information the unser entered in calculator to the server
+        $.ajax ({
+            method: "POST",
+            url:"/calculator",
+            data: equationObject,
+            success: function(response){
+                console.log(response);
+                getEquation();
+            }
+        })
     });
-*/
+});
+
+function getEquation() {
+    $.ajax({
+        method: "GET",
+        url: "/calculator",
+        success: function(response){
+            console.log(response);
+            //some function is called here that returns the answer to the equation to the server
+        }    
+    })
+}

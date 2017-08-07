@@ -1,21 +1,22 @@
-/*removes browser default settings*/
-* {
+/*
+removes browser default settings
+ {
     padding: 0px;
     margin: 0px;
 }
 
-/*styles the entire page*/
+styles the entire page
 html {
     background-color: #ffd9e6;
 }
 
-/*style the horizontal lines*/
+style the horizontal lines
 hr {
     height: 2px;
     background-color: #666666;
 }
 
-/*style heading*/
+style heading
 h1 {
     text-align: center;
     color: #660000;
@@ -24,7 +25,7 @@ h1 {
     padding: 35px;
 }
 
-/*style the container div with the calculator*/
+style the container div with the calculator
 #calculatorContainer {
     position: relative;
     width: 300px;
@@ -34,7 +35,7 @@ h1 {
     background-color: #e1e1e1;
 }
 
-/*style input field*/
+style input field
 input[type=text]{
     position: relative;
     display: block;
@@ -44,7 +45,7 @@ input[type=text]{
     background-color: #cccccc;
 }
 
-/*style buttons*/
+style buttons
 input[type=button]{
     position: relative;
     background-color: #b3b3b3;
@@ -55,12 +56,12 @@ input[type=button]{
     border-radius: 10%;
 }
 
-/*hover effect*/
+hover effect
 input[type=button]:hover {
     background-color: #8c8c8c;
-
-
 }
+*/
+
 
 
 
