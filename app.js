@@ -21,3 +21,11 @@ app.listen(5000, function(){
     console.log("listening on port:", port);
 })
 
+//functions for math entered here
+//these involve using module.exports, but I have no idea how to //incorporate them into this problem
+// it seems like the equationObject should be used in the function that solves the equation and returns the answer to the browser calculator 
+
+function solveEquation(firstNumInput, secondNumInput, equationType) {
+    var answer = (parseInt(equationObject.numberOne)) + equationObject.equationType + (parseInt(equationObject.numberTwo));
+}
+
